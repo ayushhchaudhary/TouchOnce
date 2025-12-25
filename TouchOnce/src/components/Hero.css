@@ -38,7 +38,6 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* padding: 60px 20px 20px; */
 }
 
 .ring-animation-container {
@@ -156,10 +155,6 @@
     letter-spacing: 1px;
   }
 
-  .hero-content {
-    padding: 50px 15px 15px;
-  }
-
   .ring-animation-container {
     width: 240px;
     height: 240px;
@@ -202,10 +197,6 @@
   .header h1 {
     font-size: 20px;
     letter-spacing: 0.5px;
-  }
-
-  .hero-content {
-    padding: 40px 10px 10px;
   }
 
   .ring-animation-container {
