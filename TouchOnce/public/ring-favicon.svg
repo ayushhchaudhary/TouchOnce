@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .ring-outer { stroke: #ffffff; stroke-width: 6; fill: none; }
+      .ring-inner { stroke: #ffffff; stroke-width: 4; fill: none; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="256" height="256" fill="#0f0f0f"/>
+  
+  <!-- Outer ring -->
+  <circle cx="128" cy="128" r="100" class="ring-outer"/>
+  
+  <!-- Inner ring -->
+  <circle cx="128" cy="128" r="68" class="ring-inner"/>
+</svg>
