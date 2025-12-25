@@ -1,0 +1,272 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 10;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.rotating-o {
+  display: inline-block;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.hero-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* padding: 60px 20px 20px; */
+}
+
+.ring-animation-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-text {
+  width: 90%;
+  height: 100%;
+}
+
+.text-on-circle {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 4.5px;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  text-transform: uppercase;
+}
+
+.center-ring {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+}
+
+.center-ring::before {
+  content: "";
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-text {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  text-align: right;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  max-width: 300px;
+}
+
+.footer-text p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Tablet and smaller devices */
+@media (max-width: 1024px) {
+  .header h1 {
+    font-size: 28px;
+    letter-spacing: 1.5px;
+  }
+
+  .ring-animation-container {
+    width: 280px;
+    height: 280px;
+  }
+
+  .text-on-circle {
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+
+  .center-ring {
+    width: 110px;
+    height: 110px;
+    border: 2.5px solid #ffffff;
+  }
+
+  .center-ring::before {
+    width: 78px;
+    height: 78px;
+    border: 1.8px solid #ffffff;
+  }
+
+  .header {
+    top: 30px;
+    left: 30px;
+  }
+
+  .footer-text {
+    bottom: 30px;
+    right: 30px;
+    font-size: 13px;
+  }
+}
+
+/* Small tablets and landscape phones */
+@media (max-width: 768px) {
+  .header {
+    top: 20px;
+    left: 20px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  .hero-content {
+    padding: 50px 15px 15px;
+  }
+
+  .ring-animation-container {
+    width: 240px;
+    height: 240px;
+  }
+
+  .text-on-circle {
+    font-size: 16px;
+    letter-spacing: 3px;
+    stroke-width: 1.5;
+  }
+
+  .center-ring {
+    width: 95px;
+    height: 95px;
+    border: 2px solid #ffffff;
+  }
+
+  .center-ring::before {
+    width: 68px;
+    height: 68px;
+    border: 1.5px solid #ffffff;
+  }
+
+  .footer-text {
+    bottom: 20px;
+    right: 20px;
+    font-size: 12px;
+    max-width: 280px;
+    line-height: 1.5;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .header {
+    top: 15px;
+    left: 15px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+  }
+
+  .hero-content {
+    padding: 40px 10px 10px;
+  }
+
+  .ring-animation-container {
+    width: 180px;
+    height: 180px;
+  }
+
+  .text-on-circle {
+    font-size: 13px;
+    letter-spacing: 2px;
+    stroke-width: 1.2;
+  }
+
+  .center-ring {
+    width: 72px;
+    height: 72px;
+    border: 1.8px solid #ffffff;
+  }
+
+  .center-ring::before {
+    width: 52px;
+    height: 52px;
+    border: 1.2px solid #ffffff;
+  }
+
+  .footer-text {
+    bottom: 15px;
+    right: 15px;
+    font-size: 11px;
+    max-width: 200px;
+  }
+}
+
+/* Extra small phones (< 375px) */
+@media (max-width: 375px) {
+  .header h1 {
+    font-size: 18px;
+  }
+
+  .ring-animation-container {
+    width: 160px;
+    height: 160px;
+  }
+
+  .text-on-circle {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
+  .center-ring {
+    width: 65px;
+    height: 65px;
+  }
+
+  .center-ring::before {
+    width: 47px;
+    height: 47px;
+  }
+
+  .footer-text {
+    font-size: 10px;
+    max-width: 180px;
+  }
+}
