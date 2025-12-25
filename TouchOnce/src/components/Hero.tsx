@@ -113,7 +113,7 @@ export default function Hero() {
                 startOffset="0%"
                 textAnchor="start"
                 fontStretch="expanded">
-                Coming Soon • Coming Soon • Coming Soon • Coming Soon •
+                Coming Soon • Coming Soon • Coming Soon •
               </textPath>
             </text>
           </svg>
